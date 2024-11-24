@@ -1,32 +1,26 @@
 <script>
 
+    import Nav from "$lib/components/Nav.svelte";
+
   </script>
   
     <!-- <div class="gradient"></div> -->
   
     <section class="layout">
-      <!--  -->
       <div class="body-content">
         <div class="header">
           <h1>✨Watching the Detectives Fan Club HQ✨</h1>
         </div>
   
         <div class="main">
-          <nav>
-            <ul>
-              <li><a href="/"><span>🔎 home</span></a></li>
-              <li><a href="/about"><span>🌃 about this project</span></a></li>
-              <li><a href="/awards"><span>🏆 awards/honors</span></a></li>
-              <li><a href="/reviews"><span>⭐ leave a review</span></a></li>
-            </ul>
-          </nav>
+          <Nav/>
   
           <div class="summary">
             <p>
               A brief summary does this film no good, but we will attempt: video
               store owner <a class="tooltip"
                 >Neil (our fav Cillian Murphy)<span>
-                  <img class="tooltip" alt="" src="./assets/thumbsup.gif" />
+                  <img class="tooltip" alt="" src="../../../src/assets/thumbsup.gif" />
                 </span></a
               >
               "an incorrigible prankster and film noir buff" breaks up with his
@@ -44,7 +38,7 @@
               the movies through running an unprofitable video store. In walks
               <a class="tooltip"
                 >Violet (also our fav Lucy Liu)<span
-                  ><img class="tooltip" alt="" src="imgs/lucy_liu.jpg" /></span
+                  ><img class="tooltip" alt="" src="../../../src/imgs/lucy_liu.jpg" /></span
                 ></a
               >, a modern day femme fatale who "starts to lead Neil down a road of
               petty crime." Curiosity killed the cat they said. But it probably
