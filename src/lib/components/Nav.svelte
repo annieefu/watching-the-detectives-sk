@@ -30,10 +30,15 @@
   
   
   nav {
-    width: 100%;
+    /* width: 100%; */
     margin: auto;
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 15px;
   }
   
   nav ul {
@@ -44,11 +49,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-  font-family: "Palanquin", sans-serif;
+    font-family: "Palanquin", sans-serif;
     font-weight: 400;
     font-style: normal;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     justify-items: space-between;
   }

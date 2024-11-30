@@ -83,7 +83,6 @@
 
 	.review-elements {
 		margin: auto;
-		width: 60%;
 	}
 
 	.review {

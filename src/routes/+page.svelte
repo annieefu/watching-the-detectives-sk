@@ -70,7 +70,6 @@
   margin: 0px;
   /* background-color: black; */
   /* opacity: .7; */
-  width: 65%;
   margin: auto;
   margin-top: 35px;
   border-radius: 15px;

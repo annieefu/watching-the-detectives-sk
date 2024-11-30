@@ -12,11 +12,17 @@
 		</div>
 		<div class="main">
 
-      <Nav />
 			<slot />
-		</div>
-		<aside>
-		</aside>
+    </div>
+    
+
+    <aside class="aside-nav">
+
+      <Nav />
+    </aside>
+    <footer>
+      
+    </footer>
 	</div>
 </section>
 
@@ -50,13 +56,8 @@
     }
   
     .header {
-      padding: 0px;
-      margin: 0px;
       /* background-color: black; */
       /* opacity: .7; */
-      width: 65%;
-      margin: auto;
-      margin-top: 35px;
       border-radius: 15px;
       font-size: 1.5rem;
     }
@@ -179,31 +180,45 @@
       bottom: 0;
     } */
   
+
+    .header {
+      grid-area: header;
+    }
+    .main {
+      grid-area: main;
+    }
+    .aside-nav{
+      grid-area: aside;
+    }
+    .footer {
+      grid-area: footer;
+    }
+
     .body-content {
-      width: 100%;
+      margin-left: 8%;
+      margin-right: 8%;
   
       position: relative; /* For proper layering */
-      margin: 0 auto;
-      width: 100%; /* Full width */
-      background:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
-        /* Black to transparent gradient */
-          linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
-        url("../imgs/detectives_bg.jpg") no-repeat top center; /* Your background image */
-      background-size: cover; /* Ensure the image covers the area */
+      width: 84%; /* Full width */
+      
       height: 100vh;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 3fr 1fr;
+      grid-template-areas:
+        "header header header header"
+        "main main main aside"
+        "footer footer footer footer";
+      gap: 8px;
     }
   
     /* Main Content */
     .main {
       /* padding: 20px; */
       margin: 30px;
-      margin-top: 250px;
       background-color: black;
       opacity: 0.7;
-      width: 65%;
-      margin-left: auto;
-      margin-right: auto;
       border-radius: 15px;
     }
   
@@ -240,22 +255,13 @@
     .layout {
       width: 100%;
       height: 100vh;
-      display: grid;
-      grid:
-        "header" auto
-        "main" 1fr
-        "footer" auto
-        / 1fr;
-      gap: 8px;
+      background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
+        /* Black to transparent gradient */
+          linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
+        url("../imgs/detectives_bg.jpg") no-repeat top center; /* Your background image */
+      background-size: cover; /* Ensure the image covers the area */
+      
     }
   
-    .header {
-      grid-area: header;
-    }
-    .main {
-      grid-area: main;
-    }
-    .footer {
-      grid-area: footer;
-    }
 </style>
