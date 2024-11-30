@@ -22,25 +22,30 @@
               </p>
     
               <p>
-                Dana passed away in the summer of 2024, before we could finish the
-                site.
+                Dana passed away in the summer of 2024, before we could finish this
+                site. She loved this movie with the authenticity and absurdity that she loved many things.
+                I'm continuing to work on this because it's a testament to her unique spirit, unbridled creativity, and our friendship that meant so much to me. I love you and miss you so, so, much Dana.
+                I hope you'd like how this turned out.
+              <br/>
+              
+              <span class="quote-source">-Annie</span>
               </p>
-              <br /><br /><br />
-              <div class="quote">
+              <br /><br />
                 <p>
                   <strong
-                    >Because true collaborators in this life are rare.
+                    >"Because true collaborators in this life are rare."
                   </strong><br />
                   <span class="quote-source">
                     — Gabrielle Zevin, <i>Tomorrow and Tomorrow and Tomorrow</i></span>
                 </p>
-              </div>
     
             </div>
    
     <style>
       .quote-source {
-        margin-left: 40%;
+        float: right;
+        width:auto;
+        margin-left: auto;
         text-align: right;
       }
   
