@@ -1,7 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import '../../styles.css';
-	import Nav from '$lib/components/Nav.svelte';
 
 	var tooltips = document.querySelectorAll('.tooltip span');
 
@@ -15,14 +13,6 @@
 	// }
 </script>
 
-<section class="layout">
-	<div class="body-content">
-		<div class="header">
-			<h1>✨Watching the Detectives Fan Club HQ✨</h1>
-		</div>
-
-		<div class="main">
-			<Nav />
 
 			<div class="review">
 
@@ -30,10 +20,6 @@
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat ut voluptatibus placeat nobis modi quod eligendi odit aut explicabo. Illo incidunt quam aspernatur natus id repellendus, provident quaerat molestiae.</p>
 				</div>
 			</div>
-		</div>
-	</div>
-
-</section>
 
 <style>
 	.rate {
