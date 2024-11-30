@@ -1,5 +1,8 @@
 <script>
-	import Nav from '$lib/components/Nav.svelte';
+  import Nav from '$lib/components/Nav.svelte';
+  
+
+  import '../styles.css';
 </script>
 
 <section class="layout">
@@ -8,10 +11,11 @@
 			<h1>✨Watching the Detectives Fan Club HQ✨</h1>
 		</div>
 		<div class="main">
+
+      <Nav />
 			<slot />
 		</div>
 		<aside>
-			<Nav />
 		</aside>
 	</div>
 </section>

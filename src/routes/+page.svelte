@@ -1,46 +1,26 @@
-<script>
 
-    import Nav from "$lib/components/Nav.svelte";
-
-  </script>
   
     <!-- <div class="gradient"></div> -->
   
-    <section class="layout">
-      <div class="body-content">
-        <div class="header">
-          <h1>✨Watching the Detectives Fan Club HQ✨</h1>
-        </div>
-  
-        <div class="main">
-          <Nav/>
-  
+    <!-- <section class="layout"> -->
           <div class="summary">
             <p>
               A brief summary does this film no good, but we will attempt: video
-              store owner <a class="tooltip"
-                >Neil (our fav Cillian Murphy)<span>
+              store owner <a class="tooltip">Neil (our fav Cillian Murphy)<span>
                   <img class="tooltip" alt="" src="../../../src/assets/thumbsup.gif" />
-                </span></a
-              >
+                </span></a>
               "an incorrigible prankster and film noir buff" breaks up with his
               girlfriend citing her lack of similarity to
-              <a class="tooltip"
-                >Katherine Ross in "Butch Cassidy and the Sundance Kid."<span
+              <a class="tooltip">Katherine Ross in "Butch Cassidy and the Sundance Kid."<span
                   ><img
                     class="tooltip"
                     alt=""
                     src="https://static.life.com/wp-content/uploads/2019/09/30171245/3.-1968_003619-1.png"
-                  /></span
-                ></a
-              >
+                  /></span></a>
               She tells him to get over his silly little life pretending to live in
               the movies through running an unprofitable video store. In walks
               <a class="tooltip"
-                >Violet (also our fav Lucy Liu)<span
-                  ><img class="tooltip" alt="" src="../../../src/imgs/lucy_liu.jpg" /></span
-                ></a
-              >, a modern day femme fatale who "starts to lead Neil down a road of
+                >Violet (also our fav Lucy Liu)<span><img class="tooltip" alt="" src="../../../src/imgs/lucy_liu.jpg" /></span></a>, a modern day femme fatale who "starts to lead Neil down a road of
               petty crime." Curiosity killed the cat they said. But it probably
               wouldn't kill Neil to live in the moment, and Neil is not a cat.
             </p>
@@ -52,11 +32,8 @@
                 <strong>Violet:</strong> Because I really like you.
               </p>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="footer"></div>
-    </section>
+    
   
   
   <style>

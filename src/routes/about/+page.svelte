@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import Nav from "$lib/components/Nav.svelte";
 
 import '../../styles.css';
@@ -7,14 +7,6 @@ import '../../styles.css';
   
     <!-- <div class="gradient"></div> -->
   
-    <section class="layout">
-      <div class="body-content">
-        <div class="header">
-          <h1>✨Watching the Detectives Fan Club HQ✨</h1>
-        </div>
-  
-        <div class="main">
-          <Nav/>
 
           <div class="summary">
             <p>
@@ -40,17 +32,11 @@ import '../../styles.css';
                   >Because true collaborators in this life are rare.
                 </strong><br />
                 <span class="quote-source">
-                  — Gabrielle Zevin, <i>Tomorrow and Tomorrow and Tomorrow</i
-                  ></span
-                >
+                  — Gabrielle Zevin, <i>Tomorrow and Tomorrow and Tomorrow</i></span>
               </p>
             </div>
   
           </div>
-        </div>
-      </div>
-      <div class="footer"></div>
-    </section>
  
   <style>
     .quote-source {
