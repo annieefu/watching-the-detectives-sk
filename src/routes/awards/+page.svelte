@@ -63,7 +63,7 @@
   } 
   
   .header h1{
-    font-family: 'Basalt Fond';
+    /* font-family: 'Basalt Fond'; */
     color: var(--gold);
     text-align:  center;
     z-index: 3;
@@ -142,19 +142,6 @@
   } */
   
   
-  .body-content{
-    width: 100%;
-  
-    position: relative; /* For proper layering */
-    margin: 0 auto;
-    width: 100%; /* Full width */
-    background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%), /* Black to transparent gradient */
-    linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
-    url('imgs/detectives_bg.jpg') no-repeat top center; /* Your background image */
-    background-size: cover; /* Ensure the image covers the area */
-    padding-bottom: 20px;
-  }
   
    /* Main Content */
    .main {

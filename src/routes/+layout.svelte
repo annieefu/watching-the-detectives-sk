@@ -8,7 +8,7 @@
 <section class="layout">
 	<div class="body-content">
 		<div class="header">
-			<h1>✨Watching the Detectives Fan Club HQ✨</h1>
+			<h1 class="keania-one-regular">☾ Watching the Detectives Fan Club HQ ☽</h1>
 		</div>
 		<div class="main">
 
@@ -63,13 +63,23 @@
     }
   
     .header h1 {
-      font-family: "Basalt Fond";
+      /* font-family: "Basalt Fond"; */
       color: var(--gold);
       text-align: center;
       z-index: 3;
       position: relative; /* Keep text above the gradient */
       z-index: 2; /* Ensure text is above the gradient */
+      
+      text-align: center;
+      transition: letter-spacing 2s, text-shadow 1s;
+      margin-bottom: 0rem;
+      text-shadow: 0px 0px 7px var(--lucy-purple);
     }
+
+    .header h1:hover {
+    letter-spacing: 4px;
+    text-shadow: 0px 0px 5px var(--lucy-purple), 0px 0px 10px var(--lucy-purple);
+  }
   
     :root {
       --midnight-blue: #2c3e50;
@@ -78,107 +88,7 @@
       --slate-gray: #7f8c8d;
       --mint-green: #1abc9c;
     }
-    .tooltip {
-      text-decoration: underline;
-      position: relative;
-      filter: none;
-      cursor: pointer;
-    }
-  
-    .tooltip.a {
-      cursor: pointer;
-    }
-  
-    .tooltip span {
-      display: none;
-      cursor: pointer;
-    }
-  
-    .tooltip:hover span {
-      display: block;
-      position: fixed;
-      overflow: hidden;
-      z-index: 99;
-      margin-left: 20%;
-      cursor: pointer;
-    }
-  
-    .tooltip img {
-      z-index: 99;
-    }
-  
-    .site-title {
-      color: var(--gold);
-      font-family: "Keania One", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      /* margin: 30px; */
-    }
-  
-    body {
-      background-color: black;
-    }
-  
-    /* nav */
-  
-    nav {
-      width: 100%;
-      margin: auto;
-      display: inline-flex;
-      flex-direction: row;
-    }
-  
-    nav ul {
-      width: 70%;
-      list-style-type: none;
-      padding: 0;
-  
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 30px;
-      font-family: "Palanquin", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      justify-items: space-between;
-    }
-  
-    nav ul li {
-      /* display: block; */
-    }
-  
-    nav ul li a {
-      width: auto;
-      display: block;
-      /* padding: 20px; */
-      text-decoration: none;
-      color: var(--mint-green);
-      font-size: 18px;
-      /* background-color: #FEC9C7; */
-      filter: drop-shadow(10px 5px 4px black);
-    }
-  
-    nav ul li a:hover {
-      color: #cd88cc;
-    }
-  
-    /* tooltips */
-  
-    img.tooltip {
-      float: right;
-    }
-  
-    /* .blurred {
-      background-image: url('imgs/backgroundfooter.jpg');
-      float: left;
-      height: 450px;
-      box-shadow: 0 0 8px 8px #8cBBD3 inset;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-    } */
+   
   
 
     .header {
@@ -189,9 +99,6 @@
     }
     .aside-nav{
       grid-area: aside;
-    }
-    .footer {
-      grid-area: footer;
     }
 
     .body-content {
@@ -259,7 +166,7 @@
         linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
         /* Black to transparent gradient */
           linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
-        url("../imgs/detectives_bg.jpg") no-repeat top center; /* Your background image */
+        url("../imgs/backgroundfooter.jpg") no-repeat top center; /* Your background image */
       background-size: cover; /* Ensure the image covers the area */
       
     }

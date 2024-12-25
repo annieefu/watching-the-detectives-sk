@@ -10,7 +10,7 @@
   
             <div class="summary">
               <p>
-                This project was born on an early morning in September 2023, after
+                This project was born on an early morning (late night) in September 2023, after
                 we (Annie Fu and Dana Gong) watched the incredible movie that is
                 Watching the Detectives. We finished it around 3am, delirious from
                 constant laughter and bewildered at what we had just seen. We loved
@@ -24,8 +24,9 @@
               <p>
                 Dana passed away in the summer of 2024, before we could finish this
                 site. She loved this movie with the authenticity and absurdity that she loved many things.
-                I'm continuing to work on this because it's a testament to her unique spirit, unbridled creativity, and our friendship that meant so much to me. I love you and miss you so, so, much Dana.
-                I hope you'd like how this turned out.
+                I'm continuing to work on this because it's a testament to her unique spirit, unbridled creativity, and our friendship that meant so much to me. 
+                I love you and miss you every day Dana;
+                I hope you like how this turned out.
               <br/>
               
               <span class="quote-source">-Annie</span>
