@@ -203,19 +203,6 @@
   
   
   
-  .layout {
-  width: 100%;
-    height: 100vh;
-  display: grid;
-  grid:
-    "header" auto
-    "main" 1fr
-    "footer" auto
-    / 1fr;
-  gap: 8px;
-  
-  
-  }
   
   .header { grid-area: header; }
   .main { grid-area: main; }

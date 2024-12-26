@@ -24,9 +24,9 @@
               <p>
                 Dana passed away in the summer of 2024, before we could finish this
                 site. She loved this movie with the authenticity and absurdity that she loved many things.
-                I'm continuing to work on this because it's a testament to her unique spirit, unbridled creativity, and our friendship that meant so much to me. 
-                I love you and miss you every day Dana;
-                I hope you like how this turned out.
+                I'm continuing to work on it because it's a testament to her unique spirit, unbridled creativity, and our friendship that meant so much to me. 
+                I love you and miss you every day, Dana.
+                I hope you'd like how this turned out.
               <br/>
               
               <span class="quote-source">-Annie</span>
@@ -39,10 +39,24 @@
                   <span class="quote-source">
                     — Gabrielle Zevin, <i>Tomorrow and Tomorrow and Tomorrow</i></span>
                 </p>
+
+
+                <br/><br/>
+                <div class="text-img">
+                  
+                <img style="" src="../../src/imgs/dana-wtd.avif" />
     
+              </div>
             </div>
    
     <style>
+      .text-img img{
+        width: 50%;
+        margin: auto;
+      }
+      .text-img{
+        text-align: center;
+      }
       .quote-source {
         float: right;
         width:auto;

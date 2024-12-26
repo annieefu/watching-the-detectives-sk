@@ -108,60 +108,22 @@
       position: relative; /* For proper layering */
       width: 84%; /* Full width */
       
-      height: 100vh;
+      height: 100%;
 
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 3fr 1fr;
+      grid-template-rows: 160px 4fr auto;
       grid-template-areas:
         "header header header header"
         "main main main aside"
-        "footer footer footer footer";
+        ". . . .";
       gap: 8px;
     }
   
-    /* Main Content */
-    .main {
-      /* padding: 20px; */
-      margin: 30px;
-      background-color: black;
-      opacity: 0.7;
-      border-radius: 15px;
-    }
-  
-    .main p {
-      color: white;
-      opacity: 1;
-      font-family: "Abordage Regular";
-    }
-  
-    /* Main Page */
-    .summary {
-      width: 90%;
-      margin: auto;
-      opacity: 1;
-      padding: 20px;
-    }
-  
-    .summary p {
-      opacity: 1;
-    }
-  
-    .quote {
-      padding-left: 50px;
-    }
-  
-    /* Awards Page */
-    .rankings {
-      text-align: center;
-      align-content: center;
-      list-style-position: inside;
-      list-style-type: "⭐ ";
-    }
   
     .layout {
       width: 100%;
-      height: 100vh;
+      height: 100%;
       background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
         /* Black to transparent gradient */

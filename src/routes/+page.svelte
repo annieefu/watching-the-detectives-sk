@@ -4,6 +4,12 @@
   
     <!-- <section class="layout"> -->
       <div class="summary">
+        
+    <h2 class="keania-one-regular">Welcome!</h2>
+    <p>
+      This is the unofficial fan page for <a class="tooltip">Watching the Detectives (2007)<span><img style="width: 300px" class="tooltip" src="https://m.media-amazon.com/images/M/MV5BODQ3ZTMzZTItZjgzYS00YjgxLWFkNjQtYjczNjkxNGIwYmJiXkEyXkFqcGc@._V1_.jpg"/></span></a>, featuring Cillian Murphy and Lucy Liu.
+
+    </p>
         <p>
           A brief summary does this film no good, but we will attempt: video
           store owner <a class="tooltip">Neil (our fav Cillian Murphy)<span>
@@ -13,6 +19,7 @@
           girlfriend citing her lack of similarity to
           <a class="tooltip">Katherine Ross in "Butch Cassidy and the Sundance Kid."<span
               ><img
+              style="height: 400px;"
                 class="tooltip"
                 alt=""
                 src="https://static.life.com/wp-content/uploads/2019/09/30171245/3.-1968_003619-1.png"
@@ -26,7 +33,7 @@
         </p>
         <div class="quote">
           <p>
-            <strong>Neil: </strong>What are doing to me, Violet? Why are you
+            <strong>Neil:</strong> What are doing to me, Violet? Why are you
             doing this? Why are you like this?
             <br />
             <strong>Violet:</strong> Because I really like you.
@@ -37,6 +44,10 @@
 
 
 <style>
+
+  strong{
+    color: var(--mint-green);
+  }
 .gradient {
   position: absolute;
   top: 0;
@@ -125,15 +136,12 @@ img.tooltip {
   float: right;
 }
 
-/* .blurred {
-  background-image: url('imgs/backgroundfooter.jpg');
-  float: left;
-  height: 450px;
-  box-shadow: 0 0 8px 8px #8cBBD3 inset;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-} */
+.summary h2 {
+  opacity: 1;
+  line-height: 1.4;
+  color: var(--gold);
+  border-bottom: 3px double var(--gold);
+}
 
 
 /* Main Page */
@@ -146,6 +154,7 @@ img.tooltip {
 
 .summary p {
   opacity: 1;
+  line-height: 1.4;
 }
 
 .quote {

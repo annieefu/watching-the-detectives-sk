@@ -35,19 +35,14 @@
     display: inline-flex;
     flex-direction: column;
     width: 100%;
-    margin: 30px;
-    background-color: black;
-    opacity: 0.7;
-    border-radius: 15px;
   }
   
   nav ul {
     width: 70%;
     list-style-type: none;
-    padding: 0;
   
-    margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
     margin-bottom: 30px;
     font-family: "Palanquin", sans-serif;
     font-weight: 400;
@@ -60,6 +55,23 @@
   
   nav ul li {
     /* display: block; */
+    margin-bottom: 15px;
+    background-color: var(--bg);
+    opacity: 0.7;
+    border-radius: 30px;
+    border: solid 1px var(--mint-green);
+    padding:4px;
+    width: auto;
+    
+    text-shadow: 0px 0px 2px var(--gold);
+    box-shadow: 0px 0px 1px var(--mint-green), 0px 0px 1px var(--mint-green) inset;
+    text-align:center;
+  }
+
+  nav ul li:hover {
+    
+    text-shadow: 0px 0px 4px var(--gold);
+    box-shadow: 0px 0px 5px var(--mint-green), 0px 0px 5px var(--mint-green) inset;
   }
   
   nav ul li a {
@@ -67,14 +79,14 @@
     display: block;
     /* padding: 20px; */
     text-decoration: none;
-    color: var(--mint-green);
+    color: var(--gold);
     font-size: 18px;
     /* background-color: #FEC9C7; */
     filter: drop-shadow(10px 5px 4px black);
   }
   
   nav ul li a:hover {
-    color: #CD88CC;
+    color: var(--gold);
   }
   
   </style>
