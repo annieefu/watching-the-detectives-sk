@@ -134,8 +134,6 @@ img.tooltip {
 }
 
 
-/* Main Page */
-
 
 
 </style>

@@ -26,8 +26,6 @@
 
 <style>
 	
-
-
 	.review-elements {
 		margin: auto;
 	}

@@ -63,10 +63,6 @@
     list-style-type: "⭐ ";
     
   }
-
-  
-  
- 
   
   .rankings a{
   
@@ -82,11 +78,5 @@
     color: #CD88CC;
   }
   
-  
-  
-  
-  .header { grid-area: header; }
-  .main { grid-area: main; }
-  .footer { grid-area: footer; }
   
 </style>
