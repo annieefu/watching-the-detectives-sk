@@ -45,9 +45,6 @@
 
 <style>
 
-  strong{
-    color: var(--mint-green);
-  }
 .gradient {
   position: absolute;
   top: 0;
@@ -136,30 +133,9 @@ img.tooltip {
   float: right;
 }
 
-.summary h2 {
-  opacity: 1;
-  line-height: 1.4;
-  color: var(--gold);
-  border-bottom: 3px double var(--gold);
-}
-
 
 /* Main Page */
-.summary {
-  width: 90%;
-  margin: auto;
-  opacity: 1;
-  padding: 20px;
-}
 
-.summary p {
-  opacity: 1;
-  line-height: 1.4;
-}
-
-.quote {
-  padding-left: 50px;
-}
 
 
 </style>

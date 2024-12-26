@@ -62,7 +62,13 @@
     z-index: 2; /* Ensure text is above the gradient */
   }
   
-  
+.summary h2 {
+  opacity: 1;
+  line-height: 1.4;
+  color: var(--gold);
+  border-bottom: 3px double var(--gold);
+}
+
 .summary {
   width: 90%;
   margin: auto;
@@ -73,6 +79,10 @@
 .summary p {
   opacity: 1;
   line-height: 1.4;
+}
+
+.quote {
+  padding-left: 50px;
 }
   
   :root {
