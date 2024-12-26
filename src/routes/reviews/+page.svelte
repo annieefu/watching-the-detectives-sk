@@ -14,14 +14,39 @@
 </script>
 
 
-			<div class="review">
+			<div class="reviews">
+				<h2 class="keania-one-regular">Reviews!</h2>
 
 				<div class="review-elements">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat ut voluptatibus placeat nobis modi quod eligendi odit aut explicabo. Illo incidunt quam aspernatur natus id repellendus, provident quaerat molestiae.</p>
+					<p>No fan page is complete without hearing from the members themselves. Here, you can read the wise words of others or submit your own.
+						Or, you can drop a message to Dana. 
+					</p>
 				</div>
 			</div>
 
 <style>
+	
+
+
+	.review-elements {
+		margin: auto;
+	}
+
+	.reviews {
+		height: auto;
+		
+		width: 90%;
+    margin: auto;
+    opacity: 1;
+    padding: 20px;
+	}
+
+
+
+
+	/* Review stuff */
+
+
 	.rate {
 		border-bottom-right-radius: 12px;
 		border-bottom-left-radius: 12px;
@@ -81,14 +106,6 @@
 		color: #fff;
 	}
 
-	.review-elements {
-		margin: auto;
-	}
-
-	.review {
-		height: auto;
-		padding: 20px;
-	}
 
 	form strong {
 		font-family: 'Abordage Regular';
