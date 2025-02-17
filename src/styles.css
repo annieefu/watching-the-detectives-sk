@@ -8,6 +8,15 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Black to transparent */
     z-index: 1; /* Behind other content */
   }
+
+  .keania-one-regular {
+    font-family: "Keania One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+
   
   @font-face {
     font-family: 'Abordage Regular'; /* Name you want to use in CSS */
@@ -30,15 +39,22 @@
     margin: 0px;
     /* background-color: black; */
     /* opacity: .7; */
-    width: 65%;
     margin: auto;
     margin-top: 35px;
     border-radius: 15px;
     font-size: 1.5rem;
   } 
   
+  strong{
+    color: var(--mint-green);
+  }
+
+  i {
+    color: var(--gold);
+  }
+  
   .header h1{
-    font-family: 'Basalt Fond';
+    /* font-family: 'Basalt Fond'; */
     color: var(--gold);
     text-align:  center;
     z-index: 3;
@@ -46,7 +62,28 @@
     z-index: 2; /* Ensure text is above the gradient */
   }
   
-  
+.summary h2, h2 {
+  opacity: 1;
+  line-height: 1.4;
+  color: var(--gold);
+  border-bottom: 3px double var(--gold);
+}
+
+.summary {
+  width: 90%;
+  margin: auto;
+  opacity: 1;
+  padding: 20px;
+}
+
+.summary p {
+  opacity: 1;
+  line-height: 1.4;
+}
+
+.quote {
+  padding-left: 50px;
+}
   
   :root {
     --midnight-blue: #2C3E50;
@@ -54,6 +91,11 @@
     --gold: #F1C40F;
     --slate-gray: #7F8C8D;
     --mint-green: #1ABC9C;
+    --lucy-purple: #c054aa;
+    --bg: rgba(0, 10, 7, 0.534);
+
+    
+
   }
   .tooltip {
     text-decoration: underline;
@@ -98,6 +140,23 @@
    background-color: black;
    margin: 0;
   }
+
+  * {
+    cursor: url('assets/cursor/QuestionMark_01.png'), auto;
+    -webkit-animation: cursor 500ms infinite;
+    animation: cursor 500ms infinite;
+  }
+
+  @-webkit-keyframes cursor {
+    0% {cursor: url(assets/cursor/QuestionMark_01.png), auto;}
+    50% {cursor: url(assets/cursor/QuestionMark_02.png), auto;}
+  } 
+  
+  @keyframes cursor {
+    0% {cursor: url(assets/cursor/QuestionMark_01.png), auto;}
+    50% {cursor: url(assets/cursor/QuestionMark_02.png), auto;}
+  }
+  
   
  
   /* tooltips */
@@ -116,33 +175,18 @@
     bottom: 0;
   } */
   
-  
-  .body-content{
-    width: 100%;
-  
-    position: relative; /* For proper layering */
-    margin: 0 auto;
-    width: 100%; /* Full width */
-    background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%), /* Black to transparent gradient */
-    linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
-    url('imgs/detectives_bg.jpg') no-repeat top center; /* Your background image */
-    background-size: cover; /* Ensure the image covers the area */
-    padding-bottom: 20px;
-  }
-  
    /* Main Content */
-   .main {
-    /* padding: 20px; */
-    margin: 30px;
-    margin-top: 250px;
-    background-color: black;
-    opacity: .7;
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px;
-  }
+  
+    /* Main Content */
+    .main {
+      /* padding: 20px; */
+      margin: 30px;
+      background-color: var(--bg);
+      fill: none;
+      border: solid 1px var(--mint-green);
+      border-radius: 15px;
+      line-height: 1.2;
+    }
   
   .main p {
     color: white;
@@ -150,30 +194,8 @@
     font-family: 'Abordage Regular';
   }
   
-  /* Main Page */
-  .summary {
-    width: 90%;
-    margin: auto;
-    opacity: 1;
-    padding: 20px;
-  }
-  
-  .summary p{
-    opacity: 1;
-  }
-  
   .quote {
     padding-left: 50px;
-  }
-  
-  /* Awards Page */
-  .rankings {
-    font-family: 'Abordage Regular';
-    color: white;
-    text-align: center;
-    align-content: center;
-    list-style-position: inside;
-    list-style-type: "⭐ ";
   }
   
   .rankings a{
@@ -193,15 +215,24 @@
   
   
   .layout {
-  width: 100%;
-    height: 100vh;
   display: grid;
   grid:
     "header" auto
     "main" 1fr
-    "footer" auto
-    / 1fr;
+;
   gap: 8px;
+  
+  
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
+      /* Black to transparent gradient */
+        linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
+      url("../imgs/backgroundfooter.jpg") no-repeat top center; /* Your background image */
+    background-size: cover; /* Ensure the image covers the area */
+    
   
   
   }
