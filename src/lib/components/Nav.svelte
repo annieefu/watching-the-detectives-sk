@@ -73,8 +73,8 @@
 
   nav ul li:hover {
     
-    text-shadow: 0px 0px 4px var(--gold);
-    box-shadow: 0px 0px 5px var(--mint-green), 0px 0px 5px var(--mint-green) inset;
+    text-shadow: 0px 0px 6px var(--gold);
+    box-shadow: 0px 0px 7px var(--mint-green), 0px 0px 7px var(--mint-green) inset;
   }
   
   nav ul li a {
@@ -91,5 +91,29 @@
   nav ul li a:hover {
     color: var(--gold);
   }
+
+
+	@media (max-width: 900px) {
+    nav {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center; /* optional: center the links */
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 15px;
+    width: auto;
+  }
+}
+
   
   </style>

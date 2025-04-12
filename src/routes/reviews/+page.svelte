@@ -222,4 +222,16 @@
 		z-index: 1;
 		/* Behind other content */
 	}
+
+	@media (max-width: 900px) {
+	.masonry-with-columns {
+		columns: 2;
+	}
+}
+
+@media (max-width: 600px) {
+	.masonry-with-columns {
+		columns: 1;
+	}
+}
 </style>
