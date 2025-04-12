@@ -4,7 +4,7 @@
 	let data;
  	onMount(
 		async () => {
-			data = await d3.csv('../../../lib/data/data.csv')
+			data = await d3.csv('/data.csv')
 		}
 	)
 	$: console.log(data);
