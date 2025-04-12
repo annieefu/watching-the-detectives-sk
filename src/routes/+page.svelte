@@ -13,7 +13,7 @@
         <p>
           A brief summary does this film no good, but we will attempt: video
           store owner <a class="tooltip">Neil (our fav Cillian Murphy)<span>
-              <img class="tooltip" alt="" src="../../../src/assets/thumbsup.gif" />
+              <img class="tooltip" alt="" src="/thumbsup.gif" />
             </span></a>
           "an incorrigible prankster and film noir buff" breaks up with his
           girlfriend citing her lack of similarity to
@@ -27,7 +27,7 @@
           She tells him to get over his silly little life pretending to live in
           the movies through running an unprofitable video store. In walks
           <a class="tooltip"
-            >Violet (also our fav Lucy Liu)<span><img class="tooltip" alt="" src="../../../src/imgs/lucy_liu.jpg" /></span></a>, a modern day femme fatale who "starts to lead Neil down a road of
+            >Violet (also our fav Lucy Liu)<span><img class="tooltip" alt="" src="/imgs/lucy_liu.jpg" /></span></a>, a modern day femme fatale who "starts to lead Neil down a road of
           petty crime." Curiosity killed the cat they said. But it probably
           wouldn't kill Neil to live in the moment, and Neil is not a cat.
         </p>
@@ -61,14 +61,14 @@
 
 @font-face {
   font-family: "Abordage Regular"; /* Name you want to use in CSS */
-  src: url("../../../src/assets/fonts/abordage-regular.woff2") format("woff2");
+  src: url("/fonts/abordage-regular.woff2") format("woff2");
   font-weight: normal; /* or bold, etc. */
   font-style: normal; /* or italic, etc. */
 }
 
 @font-face {
   font-family: "Basalt Fond"; /* Name you want to use in CSS */
-  src: url("../../../src/assets/fonts/basalte-fond.woff2") format("woff2");
+  src: url("/fonts/basalte-fond.woff2") format("woff2");
   font-weight: bold; /* or bold, etc. */
   font-style: normal; /* or italic, etc. */
 }

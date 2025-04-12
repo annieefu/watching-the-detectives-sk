@@ -1,7 +1,6 @@
 <script lang="ts">
   import Nav from "$lib/components/Nav.svelte";
   
-  import '../../styles.css';
   
     </script>
     
@@ -37,16 +36,16 @@
                 <p>
                   <strong
                     >"Because true collaborators in this life are rare."
-                  </strong><br />
+                  </strong><br /><br/>
                   <span class="quote-source">
                     — Gabrielle Zevin, <i>Tomorrow and Tomorrow and Tomorrow</i></span>
-                </p>
+                </p><br/>
 
 
                 <br/><br/>
                 <div class="text-img">
                   
-                <img style="" src="../../src/imgs/dana-wtd.avif" />
+                <img style="" src="/imgs/dana-wtd.avif" />
     
               </div>
             </div>

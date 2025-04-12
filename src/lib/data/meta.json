@@ -1,0 +1,12 @@
+{
+	"CAPIurl": "",
+	"google": {
+		"sheet": [
+			{
+				"id": "1pOtA9f2iNVJFXQdVMZhKwrtyVJDpjDThEnztx46sXc0",
+				"gid": "0",
+				"filepath": "src/lib/data/data.csv"
+			}
+		]
+	}
+}

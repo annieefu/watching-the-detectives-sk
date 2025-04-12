@@ -1,5 +1,15 @@
 <script>
 	import { onMount } from 'svelte';
+	import * as d3 from "d3";
+	let data;
+ 	onMount(
+		async () => {
+			data = await d3.csv('../../../lib/data/data.csv')
+		}
+	)
+	$: console.log(data);
+
+
 
 	var tooltips = document.querySelectorAll('.tooltip span');
 
@@ -13,37 +23,38 @@
 	// }
 </script>
 
+<div class="reviews">
+	<h2 class="keania-one-regular">Reviews!</h2>
 
-			<div class="reviews">
-				<h2 class="keania-one-regular">Reviews!</h2>
+	<div class="review-elements">
+		<p>
+			No fan page is complete without hearing from the members themselves. Here, you can read the
+			wise words of others or submit your own. Or, you can drop a message to Dana.
+		</p>
+	</div>
+</div>
 
-				<div class="review-elements">
-					<p>No fan page is complete without hearing from the members themselves. Here, you can read the wise words of others or submit your own.
-						Or, you can drop a message to Dana. 
-					</p>
-				</div>
-			</div>
+<div class="reviews">
+
+
+</div>
+
 
 <style>
-	
 	.review-elements {
 		margin: auto;
 	}
 
 	.reviews {
 		height: auto;
-		
+
 		width: 90%;
-    margin: auto;
-    opacity: 1;
-    padding: 20px;
+		margin: auto;
+		opacity: 1;
+		padding: 20px;
 	}
 
-
-
-
 	/* Review stuff */
-
 
 	.rate {
 		border-bottom-right-radius: 12px;
@@ -103,7 +114,6 @@
 	.rating-submit:hover {
 		color: #fff;
 	}
-
 
 	form strong {
 		font-family: 'Abordage Regular';

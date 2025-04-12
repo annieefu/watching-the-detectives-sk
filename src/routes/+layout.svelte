@@ -2,7 +2,7 @@
   import Nav from '$lib/components/Nav.svelte';
   
 
-  import '../styles.css';
+  import '$lib/styles.css';
 </script>
 
 <section class="layout">
@@ -10,12 +10,11 @@
 		<div class="header">
 			<h1 class="keania-one-regular">☾ Watching the Detectives Fan Club HQ ☽</h1>
 		</div>
+
+			<Nav />
 		<div class="main">
 			<slot />
 		</div>
-		<aside>
-			<Nav />
-		</aside>
 	</div>
 </section>
 
@@ -36,14 +35,14 @@
   
     @font-face {
       font-family: "Abordage Regular"; /* Name you want to use in CSS */
-      src: url("../../../src/assets/fonts/abordage-regular.woff2") format("woff2");
+      src: url("/fonts/abordage-regular.woff2") format("woff2");
       font-weight: normal; /* or bold, etc. */
       font-style: normal; /* or italic, etc. */
     }
   
     @font-face {
       font-family: "Basalt Fond"; /* Name you want to use in CSS */
-      src: url("../../../src/assets/fonts/basalte-fond.woff2") format("woff2");
+      src: url("/fonts/basalte-fond.woff2") format("woff2");
       font-weight: bold; /* or bold, etc. */
       font-style: normal; /* or italic, etc. */
     }
@@ -90,10 +89,6 @@
     .main {
       grid-area: main;
     }
-    .aside-nav{
-      grid-area: aside;
-    }
-
     .body-content {
       margin-left: 8%;
       margin-right: 8%;
@@ -108,8 +103,8 @@
       grid-template-rows: 160px 4fr auto;
       grid-template-areas:
         "header header header header"
-        "main main main aside"
-        ". . . .";
+        "aside aside aside aside"
+        "main main main main";
       gap: 8px;
     }
   
@@ -121,7 +116,7 @@
         linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
         /* Black to transparent gradient */
           linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
-        url("../imgs/backgroundfooter.jpg") no-repeat top center; /* Your background image */
+        url("/imgs/backgroundfooter.jpg") no-repeat top center; /* Your background image */
       background-size: cover; /* Ensure the image covers the area */
       
     }

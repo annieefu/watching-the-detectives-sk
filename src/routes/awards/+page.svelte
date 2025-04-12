@@ -1,5 +1,4 @@
 <script>
-    import '../../styles.css';
     import Nav from '$lib/components/Nav.svelte';
   </script>
 
@@ -17,7 +16,7 @@
         </ul><br/><br/>
         <div class="crying-gif">
           
-        <img id = "gif" src="../../../../src/imgs/cryingalltooreal.gif" alt="background"> <br/>
+        <img id = "gif" src="/imgs/cryingalltooreal.gif" alt="background"> <br/>
       </div>
       </div>
 
