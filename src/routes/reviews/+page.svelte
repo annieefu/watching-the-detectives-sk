@@ -17,6 +17,7 @@
 	//         alert("You can't rate such an amazing movie less than 5 stars :)")
 	//     }
 	// }
+
 </script>
 
 <div class="reviews">
@@ -26,25 +27,36 @@
 		<p>
 			No fan page is complete without hearing from the members themselves. Here, you can read the
 			wise words of others or submit your own. Or, you can drop a message to Dana.
-		</p>
+		</p><br/><br/>
 	</div>
 
 	{#if data}
 		{#each data as review}
-			{review.Name}
+			<div class="review">
+				⭐⭐⭐⭐⭐<br/>
+				<p>{review.Message}</p>
+				<span class="review-name">— {review.Name}</span>
+			</div>
 
 		{/each}
 	{/if}
 </div>
 
-<div class="reviews">
-
-
-</div>
 
 
 <style>
 	.review-elements {
+		margin: auto;
+	}
+
+	.review-name{
+		text-align: right;
+	}
+
+	.review{
+		display: flex;
+		flex-direction: column;
+		max-width: 60%;
 		margin: auto;
 	}
 
@@ -55,6 +67,9 @@
 		margin: auto;
 		opacity: 1;
 		padding: 20px;
+    color: white;
+    opacity: 1;
+    font-family: 'Abordage Regular';
 	}
 
 	/* Review stuff */
