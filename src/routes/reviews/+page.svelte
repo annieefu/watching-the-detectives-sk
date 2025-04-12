@@ -9,10 +9,6 @@
 	)
 	$: console.log(data);
 
-
-
-	var tooltips = document.querySelectorAll('.tooltip span');
-
 	// function validateForm() {
 	//     console.log("hello");
 	//     let x = document.forms["reviewForm"]["rating"].value
@@ -32,6 +28,13 @@
 			wise words of others or submit your own. Or, you can drop a message to Dana.
 		</p>
 	</div>
+
+	{#if data}
+		{#each data as review}
+			{review.Name}
+
+		{/each}
+	{/if}
 </div>
 
 <div class="reviews">
