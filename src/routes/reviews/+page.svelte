@@ -1,12 +1,10 @@
 <script>
 	import { onMount } from 'svelte';
-	import * as d3 from "d3";
+	import * as d3 from 'd3';
 	let data;
- 	onMount(
-		async () => {
-			data = await d3.csv('/data.csv')
-		}
-	)
+	onMount(async () => {
+		data = await d3.csv('/data.csv');
+	});
 	$: console.log(data);
 
 	// function validateForm() {
@@ -17,7 +15,6 @@
 	//         alert("You can't rate such an amazing movie less than 5 stars :)")
 	//     }
 	// }
-
 </script>
 
 <div class="reviews">
@@ -27,37 +24,45 @@
 		<p>
 			No fan page is complete without hearing from the members themselves. Here, you can read the
 			wise words of others or submit your own. Or, you can drop a message to Dana.
-		</p><br/><br/>
+		</p>
+		<br /><br />
 	</div>
-
-	{#if data}
-		{#each data as review}
-			<div class="review">
-				⭐⭐⭐⭐⭐<br/>
-				<p>{review.Message}</p>
-				<span class="review-name">— {review.Name}</span>
-			</div>
-
-		{/each}
-	{/if}
+	<div class="masonry-with-columns">
+		{#if data}
+			{#each data as review}
+				<div class="review">
+					⭐⭐⭐⭐⭐<br />
+					<p>{review.Message}</p>
+					<span class="review-name">— {review.Name}</span>
+				</div>
+			{/each}
+		{/if}
+	</div>
 </div>
 
-
-
 <style>
+	.masonry-with-columns {
+		columns: 3;
+		column-gap: 1rem;
+	}
 	.review-elements {
 		margin: auto;
 	}
 
-	.review-name{
+	.review-name {
 		text-align: right;
+		margin-left: auto;
 	}
 
-	.review{
-		display: flex;
+	.review {
+		display: inline-flex;
 		flex-direction: column;
-		max-width: 60%;
-		margin: auto;
+		margin: 15px 0px;
+		border: gray solid 1px;
+		border-radius: 15px;
+		padding: 12px;
+
+		/* display: ; */
 	}
 
 	.reviews {
@@ -67,9 +72,9 @@
 		margin: auto;
 		opacity: 1;
 		padding: 20px;
-    color: white;
-    opacity: 1;
-    font-family: 'Abordage Regular';
+		color: white;
+		opacity: 1;
+		font-family: 'Abordage Regular';
 	}
 
 	/* Review stuff */
