@@ -1,19 +1,47 @@
+<script> 
+  import { onMount } from 'svelte';
+
+let isOpen = false;
+let isDesktop = false;
+
+onMount(() => {
+  // Ensure that window is only accessed on the client
+  const checkWidth = () => {
+    isDesktop = window.innerWidth > 1200; // Update based on window width
+  };
+
+  checkWidth(); // run once on mount
+
+  window.addEventListener('resize', checkWidth); // Attach resize event listener
+
+  // Clean up the listener when the component is destroyed
+  return () => window.removeEventListener('resize', checkWidth);
+});
+
+function toggleMenu() {
+  isOpen = !isOpen;
+}
+</script>
+
 
 <nav class="aside-nav">
+
     <ul>
       <li><a href="/">🔎 home</a></li>
       <li><a href="/about">🌃 about this project</a></li>
       <li><a href="/awards">🏆 awards/honors</a></li>
       <li><a href="/reviews">⭐ leave a review</a></li>
+      <li><a href="/screenings">📼 host a screening</a></li>
     </ul>
-  </nav>
 
+</nav>
 
   <style>
 
 
 .aside-nav{
       grid-area: aside;
+      display: block;
     }
 
     
@@ -92,28 +120,22 @@
     color: var(--gold);
   }
 
-
-	@media (max-width: 900px) {
-    nav {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--gold);
+    cursor: pointer;
+    margin: 10px;
+    z-index: 10;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center; /* optional: center the links */
-    padding: 0;
-    margin: 0;
-  }
-
-  nav ul li {
-    margin-bottom: 15px;
-    width: auto;
-  }
+@media (max-width: 1200px) {
+  
+    
 }
+
 
   
   </style>

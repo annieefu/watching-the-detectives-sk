@@ -97,18 +97,18 @@
   text-decoration: underline;
   position: relative;
   filter: none;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-weight: bold;
   color: var(--lucy-purple);
 }
 
 .tooltip.a {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .tooltip span {
   display: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .tooltip:hover span {
@@ -117,7 +117,7 @@
   overflow: hidden;
   z-index: 99;
   margin-left: 20%;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .tooltip img {

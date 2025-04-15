@@ -144,8 +144,8 @@
   html{
     scrollbar-gutter: stable;
   }
-/* 
-  * {
+
+  *, a, body, .tooltip {
     cursor: url('/cursor/QuestionMark_01.png'), auto;
     -webkit-animation: cursor 500ms infinite;
     animation: cursor 500ms infinite;
@@ -159,11 +159,11 @@
   @keyframes cursor {
     0% {cursor: url(/cursor/QuestionMark_01.png), auto;}
     50% {cursor: url(/cursor/QuestionMark_02.png), auto;}
-  } */
-  
-  *, a, body {
-    cursor: url('/cursor/vidsmall.png'), auto;
   }
+  
+  /* *, a, body {
+    cursor: url('/cursor/vidsmall.png'), auto;
+  } */
 
   
  
