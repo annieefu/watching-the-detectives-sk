@@ -140,7 +140,7 @@
    background-color: black;
    margin: 0;
   }
-
+/* 
   * {
     cursor: url('/cursor/QuestionMark_01.png'), auto;
     -webkit-animation: cursor 500ms infinite;
@@ -155,8 +155,12 @@
   @keyframes cursor {
     0% {cursor: url(/cursor/QuestionMark_01.png), auto;}
     50% {cursor: url(/cursor/QuestionMark_02.png), auto;}
-  }
+  } */
   
+  *, a, body {
+    cursor: url('assets/cursor/vidsmall.png'), auto;
+  }
+
   
  
   /* tooltips */

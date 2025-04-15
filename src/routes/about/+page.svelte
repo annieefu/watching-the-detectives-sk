@@ -15,8 +15,8 @@
                 we (Annie Fu and Dana Gong) watched the incredible movie that is
                 Watching the Detectives. We finished it around 3am, delirious from
                 constant laughter and bewildered at what we had just seen. We loved
-                it. We didn't understand how the movie didn't have a cult following.
-                We were determined to kickstart said cult following on our own. Over
+                it. We didn't understand how the movie didn't have a cult following, and
+                we were determined to kickstart said cult following on our own. Over
                 the next few months, we fleshed out the idea for this fansite and
                 worked on it here and there, forming a consistent throughline for
                 our friendship.
@@ -25,7 +25,7 @@
               <p>
                 Dana passed away in the summer of 2024, before we could finish this
                 site. She loved this movie with the authenticity and absurdity that she loved many things.
-                I'm continuing to work on it because it's a testament to her unique spirit, unbridled creativity, and our friendship that meant so much to me. 
+                I'm continuing to work on it because it's a testament to her unique spirit, unbridled creativity, and friendship that meant so much to me. 
                 I love you and miss you every day, Dana.
                 I hope you'd like how this turned out.
               <br/>
