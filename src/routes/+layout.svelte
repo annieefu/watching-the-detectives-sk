@@ -1,6 +1,9 @@
 <script>
   import Nav from '$lib/components/Nav.svelte';
   
+  import { fade, scale } from 'svelte/transition'; //
+  import { flip } from 'svelte/animate';
+  import { page } from '$app/stores'; 
 
   import '$lib/styles.css';
 </script>
@@ -12,9 +15,15 @@
 		</div>
 
 			<Nav />
-		<div class="main">
+      {#key $page.url.pathname}
+      
+		<div class="main" >
+      <div in:fade={{ duration: 800 }}>
 			<slot />
+      </div>
 		</div>
+      {/key}
+    
 	</div>
 </section>
 
@@ -118,7 +127,8 @@
           linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%),
         url("/imgs/backgroundfooter.jpg") no-repeat top center; /* Your background image */
       background-size: cover; /* Ensure the image covers the area */
-      
+      transition: background-image 1s ease-in-out, background-position 1s ease-in-out, background-size 1s ease-in-out;
+
     }
   
 </style>

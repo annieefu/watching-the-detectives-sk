@@ -140,6 +140,10 @@
    background-color: black;
    margin: 0;
   }
+
+  html{
+    scrollbar-gutter: stable;
+  }
 /* 
   * {
     cursor: url('/cursor/QuestionMark_01.png'), auto;
@@ -158,7 +162,7 @@
   } */
   
   *, a, body {
-    cursor: url('assets/cursor/vidsmall.png'), auto;
+    cursor: url('/cursor/vidsmall.png'), auto;
   }
 
   

@@ -1,6 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
 	import * as d3 from 'd3';
+	/**
+	 * @type {d3.DSVRowArray<string>}
+	 */
 	let data;
 	onMount(async () => {
 		data = await d3.csv('/data.csv');
