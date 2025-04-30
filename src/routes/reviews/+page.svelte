@@ -18,6 +18,58 @@
 	//         alert("You can't rate such an amazing movie less than 5 stars :)")
 	//     }
 	// }
+	let email = "";
+  let message = "";
+  let rating = 0;
+  let submitting = false;
+  let status = "";
+
+  function setRating(value) {
+    rating = value;
+  }
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    status = "";
+
+    if (rating < 5) {
+      status = "You can only rate this amazing movie 5 stars.";
+      return;
+    }
+
+    submitting = true;
+
+    const data = {
+      email,
+      message,
+      rating
+    };
+
+    try {
+      const response = await fetch("https://formspree.io/f/xovdjrga", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        status = "Thanks for your submission!";
+        email = "";
+        message = "";
+        rating = 0;
+      } else {
+        const result = await response.json();
+        status = result?.errors?.map(e => e.message).join(", ") || "Oops! Something went wrong.";
+      }
+    } catch (err) {
+      status = "Oops! There was a problem submitting your form.";
+    } finally {
+      submitting = false;
+    }
+  }
 </script>
 
 <div class="reviews">
@@ -28,7 +80,46 @@
 			No fan page is complete without hearing from the members themselves. Here, you can read the
 			wise words of others or submit your own. Or, you can drop a message to Dana.
 		</p>
-		<br /><br />
+		<br />
+
+		
+<form on:submit={handleSubmit}>
+	<label>
+	  Rating:
+	  <div class="stars">
+		{#each [1, 2, 3, 4, 5] as num}
+		  <span
+			class="star {num <= rating ? 'selected' : ''}"
+			on:click={() => setRating(num)}
+		  >★</span>
+		{/each}
+	  </div>
+	</label>
+	<br/>
+	<label>
+		Name:<br/>
+		<input type="email" bind:value={email} required />
+	  </label><br/><br/>
+  
+	<label>
+	  Email:<br/>
+	  <input type="email" bind:value={email} required />
+	</label><br/><br/>
+  
+	<label>
+	  Message:
+	  <br/><input class="message" type="text" bind:value={message} required />
+	</label><br/>
+  <br/>
+	<button type="submit" disabled={submitting}>
+	  {submitting ? "Sending..." : "Submit"}
+	</button>
+  
+	{#if status}
+	  <p>{status}</p>
+	{/if}
+  </form>
+<br/><br/>
 	</div>
 	<div class="masonry-with-columns">
 		{#if data}
@@ -130,6 +221,10 @@
 		top: 36px;
 		position: relative;
 	}
+	.message{
+		height:100px;
+		width: 300px;
+	}
 
 	.rating-submit {
 		border-radius: 8px;
@@ -139,6 +234,14 @@
 
 	.rating-submit:hover {
 		color: #fff;
+	}
+
+	form{
+		margin: auto;
+	}
+	form label{
+		width: 100%;
+		
 	}
 
 	form strong {
@@ -225,7 +328,18 @@
 		z-index: 1;
 		/* Behind other content */
 	}
-
+	.stars {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  .star {
+    color: lightgray;
+  }
+  .selected {
+    color: gold;
+  }
 	@media (max-width: 900px) {
 	.masonry-with-columns {
 		columns: 2;
