@@ -30,7 +30,7 @@ function toggleMenu() {
       <li><a href="/">🔎 home</a></li>
       <li><a href="/about">🌃 about this project</a></li>
       <li><a href="/awards">🏆 awards/honors</a></li>
-      <li><a href="/reviews">⭐ leave a review</a></li>
+      <li><a href="/reviews">⭐ reviews</a></li>
       <li><a href="/screenings">📼 host a screening</a></li>
     </ul>
 
