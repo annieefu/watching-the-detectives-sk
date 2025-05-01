@@ -106,19 +106,6 @@
   .tooltip.a {
   }
   
-  .tooltip span {
-    display: none;
-  
-  }
-  
-  .tooltip:hover span {
-    display: block;
-    position: fixed;
-    overflow: hidden;
-    z-index: 99;
-    margin-left: 20%;
-  }
-  
   .tooltip img {
     z-index: 99;
   }
@@ -171,9 +158,6 @@
  
   /* tooltips */
   
-  img.tooltip {
-    float: right;
-  }
   
   /* .blurred {
     background-image: url('imgs/backgroundfooter.jpg');
