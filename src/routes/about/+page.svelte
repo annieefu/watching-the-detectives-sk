@@ -11,7 +11,7 @@
               
     <h2 class="keania-one-regular">About this project</h2>
               <p>
-                This project was born on an early morning (late night) in September 2023, after
+                This site was born on an early morning (late night) in September 2023, after
                 we (Annie Fu and Dana Gong) watched the incredible movie that is
                 Watching the Detectives. We finished it around 3am, delirious from
                 laughter and bewildered at what we had just seen. We loved
