@@ -101,16 +101,13 @@
     text-decoration: underline;
     position: relative;
     filter: none;
-    cursor: pointer;
   }
   
   .tooltip.a {
-    cursor: pointer;
   }
   
   .tooltip span {
     display: none;
-    cursor: pointer;
   
   }
   
@@ -120,7 +117,6 @@
     overflow: hidden;
     z-index: 99;
     margin-left: 20%;
-    cursor: pointer;
   }
   
   .tooltip img {
@@ -144,8 +140,14 @@
   html{
     scrollbar-gutter: stable;
   }
+  cursor{
+    cursor: url('/cursor/QuestionMark_01.png'), auto;
+    -webkit-animation: cursor 500ms infinite;
+    animation: cursor 500ms infinite;
 
-  *, a, body, .tooltip {
+  }
+
+  *, a, body, .tooltip, body:hover {
     cursor: url('/cursor/QuestionMark_01.png'), auto;
     -webkit-animation: cursor 500ms infinite;
     animation: cursor 500ms infinite;

@@ -20,6 +20,7 @@
 	// }
 	let email = "";
   let message = "";
+  let name= "";
   let rating = 0;
   let submitting = false;
   let status = "";
@@ -33,7 +34,7 @@
     status = "";
 
     if (rating < 5) {
-      status = "You can only rate this amazing movie 5 stars.";
+      status = "Error! You can't rate such an amazing movie less than 5 stars :)";
       return;
     }
 
@@ -77,13 +78,30 @@
 
 	<div class="review-elements">
 		<p>
-			No fan page is complete without hearing from the members themselves. Here, you can read the
-			wise words of others or submit your own. Or, you can drop a message to Dana.
+			No fan page is complete without hearing from the members themselves. Because this is the best movie of all time,
+			there are infinite voices to hear from testifying to its greatness.  Read them all here, or <a href="#submit-review">submit your own review
+			at the bottom of this page.</a>
 		</p>
 		<br />
 
-		
-<form on:submit={handleSubmit}>
+<br/>
+	</div>
+	<div class="masonry-with-columns">
+		{#if data}
+			{#each data as review}
+				<div class="review">
+					⭐⭐⭐⭐⭐<br />
+					<p>{review.Message}</p>
+					<span class="review-name">— {review.Name}</span>
+				</div>
+			{/each}
+		{/if}
+	</div>
+
+	<br/>
+			
+	<h2 class="keania-one-regular">Submit a review or a message for Dana</h2>
+<form id="submit-review" on:submit={handleSubmit}>
 	<label>
 	  Rating:
 	  <div class="stars">
@@ -97,8 +115,8 @@
 	</label>
 	<br/>
 	<label>
-		Name:<br/>
-		<input type="email" bind:value={email} required />
+		Your name:<br/>
+		<input type="text" bind:value={name} />
 	  </label><br/><br/>
   
 	<label>
@@ -108,7 +126,10 @@
   
 	<label>
 	  Message:
-	  <br/><input class="message" type="text" bind:value={message} required />
+	  <br/>
+
+	  <textarea class="message" bind:value={message} required></textarea>
+
 	</label><br/>
   <br/>
 	<button type="submit" disabled={submitting}>
@@ -119,22 +140,26 @@
 	  <p>{status}</p>
 	{/if}
   </form>
-<br/><br/>
-	</div>
-	<div class="masonry-with-columns">
-		{#if data}
-			{#each data as review}
-				<div class="review">
-					⭐⭐⭐⭐⭐<br />
-					<p>{review.Message}</p>
-					<span class="review-name">— {review.Name}</span>
-				</div>
-			{/each}
-		{/if}
-	</div>
 </div>
 
 <style>
+	button{
+		
+    /* display: block; */
+    margin-bottom: 1px;
+    background-color: var(--bg);
+    /* opacity: 0.7; */
+    border-radius: 30px;
+    border: solid 1px var(--mint-green);
+	font-family: "Palanquin";
+	font-size: 1rem;
+    padding: 4px 16px;
+    width: auto;
+    text-shadow: 0px 0px 2px var(--gold);
+    box-shadow: 0px 0px 1px var(--mint-green), 0px 0px 1px var(--mint-green) inset;
+    text-align: center;
+	color: var(--gold);
+	}
 	.masonry-with-columns {
 		columns: 3;
 		column-gap: 1rem;
@@ -159,6 +184,10 @@
 		/* display: ; */
 	}
 
+	#submit-review p{
+		color: var(--gold);
+	}
+
 	.reviews {
 		height: auto;
 
@@ -169,6 +198,15 @@
 		color: white;
 		opacity: 1;
 		font-family: 'Abordage Regular';
+	}
+	a{
+		
+    /* padding: 20px; */
+    text-decoration: none;
+    color: var(--mint-green);
+    font-size: 18px;
+    /* background-color: #FEC9C7; */
+    filter: drop-shadow(10px 5px 4px black);
 	}
 
 	/* Review stuff */
@@ -224,6 +262,11 @@
 	.message{
 		height:100px;
 		width: 300px;
+		resize: vertical;
+  	overflow-y: auto;
+	vertical-align: top;
+	box-sizing: border-box;
+	white-space: pre-wrap;
 	}
 
 	.rating-submit {

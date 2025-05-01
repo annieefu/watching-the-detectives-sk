@@ -1,16 +1,16 @@
 
 <div class="screenings">
 
-<h2 class="keania-one-regular">⭐ Screenings ⭐</h2><br/><br/>
-<p>Hosting a screening of the movie is just one way to keep Dana's memory alive, and spread some of her joy and light. If you
-    host one, please <a href="mailto:annieccfu@gmail.com">let me know</a> and I'll add it here.
-</p><br/><br/>
-<p>⭐ September 29, 2024 in Brooklyn, New York
+<h2 class="keania-one-regular">Screenings</h2>
+<p>I think this movie captures so much of Dana's spirit, and showing it to loved ones is one of my favorite ways to keep Dana's memory alive
+  and spread some of her joy and light. Let's spread the gospel! If you decide to host your own screening, please <a href="mailto:annieccfu@gmail.com">let me know</a> and I'll add it to our list here.
+</p><br/>
+<p>⭐ December 14, 2024 in Juneau, Alaska. Hosted by <strong>Anna Canny</strong></p>
+<p>⭐ September 29, 2024 in Brooklyn, New York. Hosted by <strong>Annie Fu</strong>
   <br/><br/>
   <img src="screening1.JPG"/>
 </p><br/><br/>
 
-<p>⭐ December 14, 2024 in Juneau, Alaska</p>
 </div>
 
 
