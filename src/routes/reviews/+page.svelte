@@ -375,7 +375,7 @@
 	.stars {
     display: flex;
     gap: 0.5rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     font-size: 1.5rem;
   }
   .star {
