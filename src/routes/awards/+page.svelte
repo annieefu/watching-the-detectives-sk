@@ -25,10 +25,20 @@
 
 <style>
 
+  ul{
+    margin: 0 !important;
+    padding-inline-start: 0;
+
+  }
+  li{
+    margin: 10px 0;
+  }
+
 .crying-gif{
   margin: auto;
   width: 100%;
   text-align: center;
+  max-width: 100%;
 }
 .rankings{
   font-family: 'Abordage Regular';
@@ -70,6 +80,9 @@
     filter: drop-shadow(10px 5px 4px black);
   }
   
+  img{
+    max-width: 100%;
+  }
   .rankings a:hover {
     color: #CD88CC;
   }
