@@ -260,6 +260,12 @@
 		top: 36px;
 		position: relative;
 	}
+
+	
+.reviews a:hover {
+  color: #CD88CC;
+}
+
 	.message{
 		height:100px;
 		width: 300px;
