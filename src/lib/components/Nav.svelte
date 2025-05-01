@@ -85,42 +85,35 @@ function toggleMenu() {
     justify-content: space-between;
     justify-items: space-between;
   }
-  
-  nav ul li {
-    /* display: block; */
-    margin-bottom: 1px;
-    background-color: var(--bg);
-    opacity: 1;
-    border-radius: 30px;
-    border: solid 1px var(--mint-green);
-    padding: 4px 16px;
-    width: auto;
-    text-shadow: 0px 0px 2px var(--gold);
-    box-shadow: 0px 0px 1px var(--mint-green), 0px 0px 1px var(--mint-green) inset;
-    text-align:center;
-  }
 
-  nav ul li:hover {
+  nav ul li {
+  position: relative;
+  padding: 0; /* remove li padding */
+}
+
+nav ul li a {
+  display: block;
+  padding: 4px 7.5px;
+  width: 100%;
+  /* height: 100%; */
+  border-radius: 30px;
+  border: solid 1px var(--mint-green);
+  background-color: var(--bg);
+  text-align: center;
+  color: var(--gold);
+  font-size: 18px;
+  text-shadow: 0px 0px 2px var(--gold);
+  box-shadow: 0px 0px 1px var(--mint-green), 0px 0px 1px var(--mint-green) inset;
+  filter: drop-shadow(10px 5px 4px black);
+  text-decoration: none;
+}
+  nav ul li a:hover {
     
     text-shadow: 0px 0px 6px var(--gold);
     box-shadow: 0px 0px 7px var(--mint-green), 0px 0px 7px var(--mint-green) inset;
-  }
-  
-  nav ul li a {
-    width: 100%;
-    display: block;
-    /* padding: 20px; */
-    text-decoration: none;
-    color: var(--gold);
-    font-size: 18px;
-    /* background-color: #FEC9C7; */
-    filter: drop-shadow(10px 5px 4px black);
-  }
-  
-  nav ul li a:hover {
     color: var(--gold);
   }
-
+  
   .hamburger {
     display: none;
     background: none;
@@ -150,14 +143,14 @@ function toggleMenu() {
     justify-items: space-between;
   }
   
-  nav ul li {
+  nav ul li a {
     /* display: block; */
     margin-bottom: 8px;
     background-color: var(--bg);
     opacity: 1;
     border-radius: 30px;
     border: solid 1px var(--mint-green);
-    padding: 4px 1px;
+    padding: 6px 14px;
     width: auto;
 
     text-shadow: 0px 0px 2px var(--gold);
