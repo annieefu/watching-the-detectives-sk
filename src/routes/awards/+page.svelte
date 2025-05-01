@@ -12,7 +12,7 @@
           "Cillian Murphy Movies and Shows Ranked" ⭐</li>
         <li>A Criminal Lack of Mention in <a href="https://ew.com/best-cillian-murphy-movies-and-tv-shows-8605519">Entertainment Weekly's</a>
             "The 15 best Cillian Murphy movies and TV shows, ranked" ⭐</li>
-        <li> ❤️ <strong>#1 in Our Hearts </strong>❤️ ⭐</li>
+        <li> ❤️<strong>#1 in Our Hearts </strong>❤️ ⭐</li>
         </ul><br/><br/>
         <div class="crying-gif">
           
