@@ -197,7 +197,7 @@
 
 
   
-	@media (max-width: 1100px) {
+	@media (max-width: 700px) {
 	.body-content {
 		margin-left: 3%;
 		margin-right: 3%;
@@ -212,6 +212,14 @@
 			'aside aside aside aside'
 			'main main main main';
 		gap: 8px;
+	}
+
+  
+	.header h1:hover {
+		letter-spacing: 2.5px;
+		text-shadow:
+			0px 0px 5px var(--lucy-purple),
+			0px 0px 10px var(--lucy-purple);
 	}
 }
 </style>
