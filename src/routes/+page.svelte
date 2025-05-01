@@ -140,13 +140,13 @@ img.tooltip {
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    max-width: 90vw;
+    /* max-width: 90vw; */
     max-height: 70vh;
     display: block;
   }
 
   .tooltip span img {
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
     display: block;
     margin: 0 auto;
