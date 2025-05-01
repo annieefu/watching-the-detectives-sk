@@ -79,7 +79,7 @@
 	<div class="review-elements">
 		<p>
 			No fan page is complete without hearing from the members themselves. Since this <i>is</i> the best movie of all time,
-			there are countless voices to hear from, all testifying to greatness of this movie. This is also a space to reflect
+			there are countless voices to hear from, all testifying to its greatness. This is also a space to reflect
 			and leave a message for Dana, if you'd like. Read through them below, or <a href="#submit-review">submit your own review
 			at the bottom of this page.</a>
 		</p>
