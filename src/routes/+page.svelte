@@ -133,6 +133,17 @@ img.tooltip {
   float: right;
 }
 
+@media (max-width: 700px) {
+
+  .tooltip span{
+    margin-top: -50%;
+  }
+
+  .tooltip:hover span{
+    margin-left: 0%;
+  }
+
+}
 
 
 
