@@ -6,7 +6,7 @@
       <div class = "rankings">
         <h2 class="keania-one-regular">⭐ The Numerous Accolades of Watching the Detectives ⭐</h2>
       <ul > 
-        <li>Ranked 17/17 on <a href="https://whatculture.com/film/every-cillian-murphy-movie-ranked-worst-to-best?page=18">WhatCulture's</a> 
+        <li>Ranked dead last on <a href="https://whatculture.com/film/every-cillian-murphy-movie-ranked-worst-to-best?page=18">WhatCulture's</a> 
           "Every Cillian Murphy Movie Ranked Worst To Best" ⭐</li>
         <li>Unmentioned in <a href="https://whatculture.com/film/every-cillian-murphy-movie-ranked-worst-to-best?page=18">Rotten Tomato's</a>
           "Cillian Murphy Movies and Shows Ranked" ⭐</li>

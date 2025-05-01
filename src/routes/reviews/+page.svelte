@@ -100,7 +100,7 @@
 
 	<br/>
 			
-	<h2 class="keania-one-regular">Submit a review or a message for Dana</h2>
+	<h2 class="keania-one-regular">Submit a review or a message to Dana</h2>
 <form id="submit-review" on:submit={handleSubmit}>
 	<label>
 	  Rating:
