@@ -55,10 +55,12 @@
   padding: 0;
 }
 .screenings{
-  font-family: 'Abordage Regular';
-  width: 90%;
+    height: auto;
+    width: 90%;
     margin: auto;
+    padding: 20px;
+    color: #fff;
     opacity: 1;
-    /* padding: 20px; */
+    font-family: Abordage Regular;
 }
 </style>
