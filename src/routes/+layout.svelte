@@ -7,6 +7,9 @@
 	import '$lib/styles.css';
 
 	import { onMount } from 'svelte';
+  import { injectAnalytics } from '@vercel/analytics/sveltekit';
+
+  injectAnalytics();
 
 	let isOpen = false;
 	let isDesktop = false;
