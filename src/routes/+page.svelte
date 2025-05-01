@@ -16,7 +16,7 @@
               <img class="tooltip" alt="" src="/thumbsup.gif" />
             </span></a>
           "an incorrigible prankster and film noir buff" breaks up with his
-          girlfriend citing her lack of similarity to
+          girlfriend, citing her lack of similarity to
           <a class="tooltip">Katherine Ross in "Butch Cassidy and the Sundance Kid."<span
               ><img
               style="height: 400px;"
@@ -24,7 +24,7 @@
                 alt=""
                 src="https://static.life.com/wp-content/uploads/2019/09/30171245/3.-1968_003619-1.png"
               /></span></a>
-          She tells him to get over his silly little life pretending to live in
+          She tells him to get over his silly little life, pretending to live in
           the movies through running an unprofitable video store. In walks
           <a class="tooltip"
             >Violet (also our fav Lucy Liu)<span><img class="tooltip" alt="" src="/imgs/lucy_liu.jpg" /></span></a>, a modern day femme fatale who "starts to lead Neil down a road of
