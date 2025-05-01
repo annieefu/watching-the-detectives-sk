@@ -262,6 +262,7 @@
 	.message{
 		height:100px;
 		width: 300px;
+		max-width: 100%;
 		resize: vertical;
   	overflow-y: auto;
 	vertical-align: top;

@@ -153,6 +153,7 @@
     padding-inline-start: 0 !important;
   }
 
+  
 
 		.body-content {
 			grid-template-columns: 1fr 1fr 1fr; /* Adjust grid layout */
@@ -191,4 +192,26 @@
     
 
 	}
+
+
+
+
+  
+	@media (max-width: 1100px) {
+	.body-content {
+		margin-left: 3%;
+		margin-right: 3%;
+		position: relative;
+		width: 94%; /* Full width */
+		height: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 160px 4fr auto;
+		grid-template-areas:
+			'header header header header'
+			'aside aside aside aside'
+			'main main main main';
+		gap: 8px;
+	}
+}
 </style>
