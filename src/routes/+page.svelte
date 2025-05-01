@@ -116,7 +116,10 @@
   position: fixed;
   overflow: hidden;
   z-index: 99;
-  margin-left: 20%;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  /* margin-left: 20%; */
   /* cursor: pointer; */
 }
 
@@ -132,17 +135,22 @@
 img.tooltip {
   float: right;
 }
-
 @media (max-width: 700px) {
-
-  .tooltip span{
-    margin-top: -50%;
+  .tooltip:hover span {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    max-width: 90vw;
+    max-height: 70vh;
+    display: block;
   }
 
-  .tooltip:hover span{
-    margin-left: 0%;
+  .tooltip span img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
-
 }
 
 
