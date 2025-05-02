@@ -97,32 +97,14 @@
 		transition:
 			letter-spacing 2s,
 			text-shadow 1s;
-		animation: pulseText 3s ease-in-out infinite;
-}
-
-/* Keyframes for the automatic animation */
-@keyframes pulseText {
-	0%, 100% {
-		letter-spacing: normal;
-		text-shadow: 0px 0px 7px var(--lucy-purple);
 	}
-	50% {
-		letter-spacing: .3px;
-		text-shadow:
-			0px 0px 5px var(--lucy-purple),
-			0px 0px 8px var(--lucy-purple);
-	}
-}
 
-/* 
 	.header h1:hover {
 		letter-spacing: 4px;
 		text-shadow:
 			0px 0px 5px var(--lucy-purple),
 			0px 0px 10px var(--lucy-purple);
 	}
-
-	 */
 
 	:root {
 		--midnight-blue: #2c3e50;
